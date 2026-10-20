@@ -1,0 +1,40 @@
+body {
+    background-color: aqua;
+}
+.s700, .s900, .s1200, .s1600{
+    display: none;
+    font-size: 3em;
+}
+
+@media screen and (min-width: 700px){
+    body {
+        background-color: blueviolet;
+    }
+    .s700 {
+        display: block;
+    }
+}
+@media screen and (min-width: 900px){
+    body {
+        background-color: beige;
+    }
+    .s900 {
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: coral;
+    }
+    .s1200 {
+        display: block;
+    }
+}
+@media screen and (min-width: 1600px) {
+    body {
+        background-color: yellow;
+    }
+    .s1600 {
+        display: block;
+    }
+}
