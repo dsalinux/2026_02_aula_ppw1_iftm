@@ -1,0 +1,67 @@
+body {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 80px 1fr minmax(60px, auto);
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "menu conteudo"
+        "rodape rodape";
+    height: 100vh;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    grid-area: cabecalho;
+
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img {
+    height: 60px;
+    padding-top: 6px;
+}
+header h1 {
+    flex: 1;
+    padding-left: 20px;
+}
+
+aside {
+    background-color: #6E7ACD;
+    grid-area: menu;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+aside ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+aside ul li a:hover {
+    background-color: #fff;
+    color: #6E7ACD;
+}
+
+main {
+    background-color: #fff;
+    grid-area: conteudo;
+    padding: 20px;
+}
+footer {
+    background-color: #FFC3C5;
+    grid-area: rodape;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
